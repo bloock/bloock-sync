@@ -7,3 +7,15 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.5.9", features = ["derive"] }
+serde = { version = "1.0.123", features = ["std", "derive"] }
+serde_json = "1.0.82"
+async-trait = "0.1.57"
+ureq = "2.9.5"
+thiserror = "1.0.31"
+dotenv = "0.15.0"
+tokio = { version = "1", features = ["full"] }
+
+bloock-smt = "0.1.0"
+bloock-types = "0.1.0"
+bloock-storage = "0.1.0"
+bloock-merge = "0.1.0"

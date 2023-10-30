@@ -14,8 +14,9 @@ ureq = "2.9.5"
 thiserror = "1.0.31"
 dotenv = "0.15.0"
 tokio = { version = "1", features = ["full"] }
+hex = "0.4"
 
 bloock-smt = "0.1.0"
 bloock-types = "0.1.0"
-bloock-storage = "0.1.0"
+bloock-storage =  { version = "0.1.0", features = ["kv_hashmap"] }
 bloock-merge = "0.1.0"

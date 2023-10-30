@@ -218,6 +218,7 @@ dependencies = [
  "bloock-types",
  "clap",
  "dotenv",
+ "hex",
  "serde",
  "serde_json",
  "thiserror",

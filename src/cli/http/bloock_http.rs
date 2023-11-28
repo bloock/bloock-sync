@@ -85,7 +85,7 @@ impl BloockHttpClient {
                 h
             }
             None => {
-                let mut h = vec![("X-Api-Key".to_string(), self.get_api_key())];
+                let h = vec![("X-Api-Key".to_string(), self.get_api_key())];
                 h
             }
         }

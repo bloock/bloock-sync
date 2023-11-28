@@ -5,6 +5,12 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+default = ["h256", "keccak", "rocksdb"]
+h256 = ["bloock-types/h256"]
+keccak = ["bloock-merge/keccak"]
+rocksdb = ["bloock-storage/kv_rocks"]
+
 [dependencies]
 clap = { version = "4.5.9", features = ["derive"] }
 serde = { version = "1.0.123", features = ["std", "derive"] }
@@ -15,8 +21,10 @@ thiserror = "1.0.31"
 dotenv = "0.15.0"
 tokio = { version = "1", features = ["full"] }
 hex = "0.4"
+cfg-if = "1.0.0"
 
 bloock-smt = "0.1.0"
 bloock-types = "0.1.0"
-bloock-storage =  { version = "0.1.0", features = ["kv_hashmap"] }
+bloock-storage = "0.1.0"
 bloock-merge = "0.1.0"
+indicatif = "0.17.8"

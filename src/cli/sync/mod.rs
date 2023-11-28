@@ -44,7 +44,7 @@ impl SyncService {
         let mut root = None;
    
 
-        for index in 1616..=self.max_anchor {
+        for index in 1..=self.max_anchor {
             let base_url = self.http_client.get_api_host();
             let url = format!("{base_url}/core/anchor/{index}");
             let anchor: Anchor = match self.http_client.get_json::<String, Anchor>(url, None).await {
